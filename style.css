@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Abril Fatface", serif;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+ .page-1{
+    background-color: black;
+ }
+.page-1 video{
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+.navbar {
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* padding: 10px 20px; */
+    z-index: 1000;
+    
+  }
+  .navbar{
+    background-color: black;
+  }
+  /* .navbar-links li img{
+    height: 25px;
+    width: 70px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  } */
+  /* .navbar img{
+    height: 25px;
+    width: 75px;
+  } */
+  .page-1 img{
+    height: 35px;
+    width: 110px;
+    position: relative;
+    bottom: 30px;
+    left: 25px;
+  }
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    /* padding-top: 30px; */
+    margin-top: 30px;
+  }
+  .navbar-links a{
+    text-decoration: none;
+  }
+  
+
+  
+  .navbar-links li a{
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .navbar-links a {
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+
+
+    /* padding: 8px 12px; */
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+    /* text-transform: uppercase; */
+  
+  }
+  .navbar-links li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .navbar-links li:hover::after{
+    width: 100%;
+  }
+
+.child-div{
+    position: absolute;
+    /* list-style:none; */
+    display: flex;
+    flex-direction: column;
+    top:-1000px;
+    /* gap:40px; */
+    background-color:rgba(0, 0, 0, 0.317);
+    color: rgba(0, 0, 0, 0.771);
+    padding:16px 24px;
+    border-radius: 15px;
+    border: 1px solid white;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.child-div ul li{
+    gap: 20px;
+    list-style: none;
+    padding-bottom: 14px;
+}
+
+.parent-div:hover{
+    cursor: pointer;
+}
+
+.parent-div:hover .child-div{
+    cursor: pointer;
+    top:50px;
+    display: block;
+}
+
+/* .child-div a{ */
+    /* color:black; */
+/* } */
+
+  /* cards */
+  .card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.441);
+  }
+ 
+  .card img{
+    height: 350px;
+    width: 600px;
+    border-radius: 20px;
+  }
+  
+  .card-content{
+    width:500px;
+    /* font-size: 25px; */
+    color: black;
+    /* padding-bottom: 50px; */
+  }
+  .card-content h1{
+    font-size: 40px;
+    /* text-align: center; */
+    padding-bottom: 50px;
+    text-transform: uppercase;
+
+  }
+  .card-content p{
+    font-size: 24px;
+    font-family: "Baskervville SC", serif;
+
+  }
+  .card-content button { 
+    background-color: white !important;
+    border: 1px solid black;
+    margin-top: 70px;
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    color: black;
+    border-radius: 20px;
+  }
+  /* .card-content button a :hover{
+    background-color: white;
+  } */
+  .card-content button a{
+    text-decoration: none;
+    color: inherit;
+  }
+  .card-content-opp button a{
+    text-decoration: none;
+    color: inherit;
+  }
+  .card-button:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+  }
+
+
+  /* card-opp */
+  .card-opp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  .card-opp img{
+    height: 450px;
+    width: 450px;
+    border-radius: 20px;
+  }
+  .card-content-opp{
+    width:500px;
+    /* font-size: 25px; */
+    color: white;
+    /* padding-bottom: 50px; */
+  }
+  .card-content-opp h1{
+    font-size: 40px;
+    /* text-align: center; */
+    padding-bottom: 50px;
+    text-transform: uppercase;
+
+  }
+  .card-content-opp p{
+    font-size: 24px;
+    font-family: "Baskervville SC", serif;
+    /* font-family: "Concert One", serif; */
+  }
+  .card-content-opp button{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-top: 70px;
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    color: white;
+    border-radius: 20px;
+  }
+  .card-button-opp:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+  }
+  .card-4-img-opp img{
+    height: 400px;
+    width: 500px;
+  }
+  .card-img-arm img{
+    height: 400px;
+    width: 450px;
+  }
+
+
+  /* footer */
+  .footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    padding-left: 60px;
+    
+  }
+  
+  .footer p:hover{
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  
+  .footer-heading{
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .footer a{
+    text-decoration: none;
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.377);
+    /* position: relative; */
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* padding-bottom: 24px; */
+    /* background: linear-gradient(90deg, #767676, #767676); */
+    background-size: 100% 1px;
+    background-position-x: 0%;
+    background-position-y: calc(100% - 1px);
+    background-repeat: no-repeat;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .icons i{
+    padding: 15px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.377);
+    }
+  .icons i:hover{
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  /* copyright */
+
+  .copy-right{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    gap: 40px;
+  }
+
+  .rights p{
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .rights p span{
+     font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;
+     letter-spacing: 1.5px;
+  }
+
+  .privacy ul li{
+     display: inline-block;
+     font-size: 13px;
+     padding-left: 10px;
+     letter-spacing: 1px;
+     
+  }
+
+  .privacy ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  .privacy ul li:hover{
+     cursor:pointer;
+  }
+  
+ 
